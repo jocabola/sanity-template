@@ -1,33 +1,28 @@
 export default {
   widgets: [
     {
-      name: 'project-info',
+      name: 'document-list',
+      options: {title: 'Recent projects', order: '_createdAt desc', types: ['project']},
+      layout: {width: 'small'}
+    },
+    {
+      name: 'netlify',
       options: {
-        __experimental_before: [
-          {
-            name: 'netlify',
-            options: {
-              description:
-                'NOTE: Because these sites are static builds, they need to be re-deployed to see the changes when documents are published.',
-              sites: [
-                {
-                  buildHookId: '6128f0c6895632e505376133',
-                  title: 'Martí Verdaguer Site',
-                  name: 'marti-vm',
-                  apiId: 'ee07c3c4-ab6e-4d2f-8b25-8c861659b957'
-                }
-              ]
-            }
-          }
-        ],
+        title: 'Deploy Netlify',
+        // sites: [
+        //   {
+        //       title: 'Deploy Web',
+        //       apiId: '1589ec0f-b699-4116-9271-e39bebcd9f98',
+        //       buildHookId: '5fd86653db111a8b44cdfbb3',
+        //       name: 'masmadrenas',
+        //   },
+        // ]
       }
     },
     {
       name: 'project-users',  
       title: 'Users',
-      layout: {
-        height: 'auto'
-      }
+      layout: {height: 'auto'}
     }
   ]
 }

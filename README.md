@@ -6,6 +6,6 @@ Download/Clone + Start Here with `yarn` and then `yarn dev` to launch local sani
 
 # First steps 
 Create new empty sanity `> npm install -g @sanity/cli && sanity init`
-Copy apiID & dataset, paste apiID & dataset to `sanity.json`.
+Copy projectId & dataset, paste projectId & dataset to `sanity.json`.
 Deploy template.
 Delete empty sanity. 
